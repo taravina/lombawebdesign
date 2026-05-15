@@ -38,10 +38,9 @@ const JurusanDkv = () => {
               {/* The black block itself is the background */}
             </div>
 
-            {/* Emblem Overlapping */}
             <div className="absolute top-1/2 -translate-y-1/2 left-8 md:left-16 z-10 flex items-center">
               {/* Logo DKV */}
-              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white overflow-hidden">
+              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white overflow-hidden animate-float">
                 <img
                   src="/5 DESKOMVIS.png"
                   alt="Logo DKV"
@@ -68,7 +67,7 @@ const JurusanDkv = () => {
           </div>
 
           {/* Text Content */}
-          <div className="text-center flex flex-col items-center max-w-2xl mx-auto">
+          <div className="text-center flex flex-col items-center max-w-2xl mx-auto animate-fade-up">
             <h1 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-slate-900 mb-4 leading-tight">
               Desain Komunikasi Visual<br />
               (DKV)
@@ -120,28 +119,28 @@ const JurusanDkv = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
             {/* Card 1 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#164e63] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
               </div>
               <span className="font-bold text-slate-800 text-sm tracking-tight">Programming</span>
             </div>
             {/* Card 2 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#164e63] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg>
               </div>
               <span className="font-bold text-slate-800 text-sm tracking-tight">Database</span>
             </div>
             {/* Card 3 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#164e63] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
               </div>
               <span className="font-bold text-slate-800 text-sm tracking-tight">Web</span>
             </div>
             {/* Card 4 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#164e63] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
               </div>

@@ -39,7 +39,7 @@ const JurusanAkl = () => {
             {/* Emblem Overlapping */}
             <div className="absolute top-1/2 -translate-y-1/2 left-8 md:left-16 z-10 flex items-center">
               {/* Logo AKL Placeholder */}
-              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white">
+              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white animate-float">
                 <div className="w-full h-full rounded-full border-2 border-green-600 flex items-center justify-center bg-slate-50 overflow-hidden relative">
                   <img
                     src="/1 AKUNTANSI.png"
@@ -67,9 +67,9 @@ const JurusanAkl = () => {
           </div>
 
           {/* Text Content */}
-          <div className="text-center flex flex-col items-center max-w-2xl mx-auto">
+          <div className="text-center flex flex-col items-center max-w-2xl mx-auto animate-fade-up">
             <h1 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-slate-900 mb-4 leading-tight">
-              AKUNTANSI<br />
+              Akuntansi dan Keuangan Lembaga<br />
               (AKL)
             </h1>
             <p className="text-slate-600 text-[15px] md:text-base leading-relaxed mb-8">

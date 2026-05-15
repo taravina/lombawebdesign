@@ -36,10 +36,9 @@ const JurusanRpl = () => {
               {/* The red block itself is the background */}
             </div>
 
-            {/* Emblem Overlapping */}
             <div className="absolute top-1/2 -translate-y-1/2 left-8 md:left-16 z-10 flex items-center">
               {/* Logo RPL Asli */}
-              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white">
+              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white animate-float">
                   <img 
                     src="/logorpl.png" 
                     alt="Logo RPL SMKN 6 Jember" 
@@ -65,7 +64,7 @@ const JurusanRpl = () => {
           </div>
 
           {/* Text Content */}
-          <div className="text-center flex flex-col items-center max-w-2xl mx-auto">
+          <div className="text-center flex flex-col items-center max-w-2xl mx-auto animate-fade-up">
             <h1 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-slate-900 mb-4 leading-tight">
               Rekayasa Perangkat Lunak<br/>
               (RPL)
@@ -120,28 +119,28 @@ const JurusanRpl = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8 w-full">
             {/* Card 1 */}
-            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover:border-red-500 hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover-lift">
               <div className="w-[45px] h-[45px] bg-[#d33a3a] rounded-full flex items-center justify-center text-white mb-4 shadow-md">
                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
               </div>
               <span className="font-bold text-slate-800 text-[13px] md:text-[14px]">Programming</span>
             </div>
             {/* Card 2 */}
-            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover:border-red-500 hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover-lift">
               <div className="w-[45px] h-[45px] bg-[#d33a3a] rounded-full flex items-center justify-center text-white mb-4 shadow-md">
                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg>
               </div>
               <span className="font-bold text-slate-800 text-[13px] md:text-[14px]">Database</span>
             </div>
             {/* Card 3 */}
-            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover:border-red-500 hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover-lift">
               <div className="w-[45px] h-[45px] bg-[#d33a3a] rounded-full flex items-center justify-center text-white mb-4 shadow-md">
                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
               </div>
               <span className="font-bold text-slate-800 text-[13px] md:text-[14px]">Web</span>
             </div>
             {/* Card 4 */}
-            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover:border-red-500 hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover-lift">
               <div className="w-[45px] h-[45px] bg-[#d33a3a] rounded-full flex items-center justify-center text-white mb-4 shadow-md">
                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
               </div>
@@ -152,18 +151,18 @@ const JurusanRpl = () => {
       </section>
 
       {/* Sekilas Informasi Section */}
-      <section className="w-full max-w-6xl mx-auto px-6 py-20 bg-white">
-        <h2 className="text-2xl font-bold text-slate-900 mb-8">Sekilas Informasi</h2>
+      <section className="w-full max-w-6xl mx-auto px-6 py-20 bg-white reveal">
+        <h2 className="text-2xl font-bold text-slate-900 mb-8 animate-slide-right">Sekilas Informasi</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm">
+          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm reveal delay-100">
             {/* Menggunakan placeholder gambar, Anda dapat menggantinya nanti */}
             <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80" alt="Penyerahan Sertifikat" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm border border-slate-100/50">
+          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm border border-slate-100/50 reveal delay-200">
             {/* Menggunakan placeholder gambar, Anda dapat menggantinya nanti */}
             <img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&w=600&q=80" alt="Sertifikat BNSP" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm">
+          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm reveal delay-300">
             {/* Menggunakan placeholder gambar, Anda dapat menggantinya nanti */}
             <img src="https://images.unsplash.com/photo-1523580494112-071d16940a28?auto=format&fit=crop&w=600&q=80" alt="Kunjungan Industri" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
@@ -171,28 +170,28 @@ const JurusanRpl = () => {
       </section>
 
       {/* Prospek Kerja Section */}
-      <section className="w-full max-w-7xl mx-auto px-4 md:px-6 py-10">
+      <section className="w-full max-w-7xl mx-auto px-4 md:px-6 py-10 reveal">
         <div className="w-full bg-gradient-to-r from-[#cc2b2b] to-[#601414] rounded-sm py-16 px-8 md:px-12 shadow-md">
-          <h2 className="text-2xl md:text-[28px] font-semibold text-white mb-10 tracking-wide">Prospek Kerja</h2>
+          <h2 className="text-2xl md:text-[28px] font-semibold text-white mb-10 tracking-wide animate-fade-up">Prospek Kerja</h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
             {/* Card 1 */}
-            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover:shadow-lg transition-shadow">
+            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover-lift reveal delay-100">
               <h3 className="font-bold text-slate-900 text-[17px] md:text-xl mb-3">Web Dev</h3>
               <p className="text-slate-600 text-[13px] md:text-sm leading-relaxed">Membangun website responsif dan fungsional untuk kebutuhan bisnis.</p>
             </div>
             {/* Card 2 */}
-            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover:shadow-lg transition-shadow">
+            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover-lift reveal delay-200">
               <h3 className="font-bold text-slate-900 text-[17px] md:text-xl mb-3">Mobile Dev</h3>
               <p className="text-slate-600 text-[13px] md:text-sm leading-relaxed">Mengembangkan aplikasi Android dan iOS yang inovatif.</p>
             </div>
             {/* Card 3 */}
-            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover:shadow-lg transition-shadow">
+            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover-lift reveal delay-300">
               <h3 className="font-bold text-slate-900 text-[17px] md:text-xl mb-3">UI/UX</h3>
               <p className="text-slate-600 text-[13px] md:text-sm leading-relaxed">Merancang antarmuka dan pengalaman pengguna yang optimal.</p>
             </div>
             {/* Card 4 */}
-            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover:shadow-lg transition-shadow">
+            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover-lift reveal delay-400">
               <h3 className="font-bold text-slate-900 text-[17px] md:text-xl mb-3">Freelancer</h3>
               <p className="text-slate-600 text-[13px] md:text-sm leading-relaxed">Bekerja secara mandiri pada berbagai proyek perangkat lunak.</p>
             </div>
@@ -201,24 +200,24 @@ const JurusanRpl = () => {
       </section>
 
       {/* Lab Section */}
-      <section className="w-full max-w-6xl mx-auto px-6 py-20 bg-white mb-10">
+      <section className="w-full max-w-6xl mx-auto px-6 py-20 bg-white mb-10 reveal">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
           
           {/* Left Column: Text Content */}
-          <div className="w-full md:w-1/2 flex flex-col items-start pl-0 md:pl-4">
-            <div className="bg-[#a22f2f] text-white text-[10px] md:text-[11px] font-bold tracking-widest px-4 py-1.5 rounded-full mb-6 uppercase">
+          <div className="w-full md:w-1/2 flex flex-col items-start pl-0 md:pl-4 reveal delay-100">
+            <div className="bg-[#a22f2f] text-white text-[10px] md:text-[11px] font-bold tracking-widest px-4 py-1.5 rounded-full mb-6 uppercase animate-fade-in">
               RPL / TIK
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-[40px] font-semibold text-slate-900 mb-6 leading-tight tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-[40px] font-semibold text-slate-900 mb-6 leading-tight tracking-tight animate-fade-up">
               Software Engineering<br/>Lab
             </h2>
-            <p className="text-slate-600 text-[14px] md:text-[15px] leading-relaxed mb-8">
+            <p className="text-slate-600 text-[14px] md:text-[15px] leading-relaxed mb-8 animate-fade-up delay-200">
               A high-tech facility featuring high-performance servers, 
               advanced networking equipment, and modern 
               development stations optimized for coding, testing, and 
               deploying complex software systems.
             </p>
-            <a href="#" className="flex items-center gap-2 text-[#cc2b2b] font-bold text-[13px] md:text-sm hover:text-red-800 transition-colors">
+            <a href="#" className="flex items-center gap-2 text-[#cc2b2b] font-bold text-[13px] md:text-sm hover:text-red-800 transition-colors animate-slide-right delay-300">
               Pusat Teknologi 
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6a2 2 0 012-2h2l2 2h8a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" />
@@ -227,13 +226,13 @@ const JurusanRpl = () => {
           </div>
 
           {/* Right Column: Image */}
-          <div className="w-full md:w-1/2 pr-0 md:pr-4">
+          <div className="w-full md:w-1/2 pr-0 md:pr-4 reveal delay-300">
             <div className="rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.15)] border border-slate-100/50 relative">
                {/* Placeholder for the blue dark server lab image. We use a stock image that closely resembles it. */}
                <img 
                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" 
                  alt="Software Engineering Lab" 
-                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700 animate-float"
                />
                {/* Optional subtle blue tint to match the design's mood */}
                <div className="absolute inset-0 bg-blue-900/10 pointer-events-none mix-blend-overlay"></div>

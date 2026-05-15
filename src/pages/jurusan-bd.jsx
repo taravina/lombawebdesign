@@ -38,20 +38,20 @@ const JurusanBd = () => {
 
             {/* Emblem Overlapping */}
             <div className="absolute top-1/2 -translate-y-1/2 left-8 md:left-16 z-10 flex items-center">
-              {/* Logo BD Asli */}
-              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white">
-                  <img 
-                    src="/2 BISNIS DIGITAL.png" 
-                    alt="Logo Bisnis Digital SMKN 6 Jember" 
-                    className="w-full h-full object-contain drop-shadow-sm" 
-                  />
+              {/* Logo BD */}
+              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white overflow-hidden animate-float">
+                <img
+                  src="/2 BISNIS DIGITAL.png"
+                  alt="Logo BD"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
 
             {/* Text inside Ribbon */}
             <div className="absolute top-1/2 -translate-y-1/2 right-8 md:right-16 z-10 text-right flex flex-col items-end">
               <h2 className="text-slate-900 text-3xl md:text-5xl font-black mb-1">TUK</h2>
-              <h3 className="text-slate-900 text-xl md:text-2xl font-bold mb-1">Pemasaran</h3>
+              <h3 className="text-slate-900 text-xl md:text-2xl font-bold mb-1">Bisnis Digital</h3>
               <p className="text-slate-900 text-sm md:text-base font-semibold">2 Skema Okupasi</p>
             </div>
 
@@ -65,14 +65,14 @@ const JurusanBd = () => {
           </div>
 
           {/* Text Content */}
-          <div className="text-center flex flex-col items-center max-w-2xl mx-auto">
+          <div className="text-center flex flex-col items-center max-w-2xl mx-auto animate-fade-up">
             <h1 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-slate-900 mb-4 leading-tight">
-              Bisnis Digital Dan Pemasaran<br/>
-              (BDP)
+              Bisnis Digital<br />
+              (BD)
             </h1>
             <p className="text-slate-600 text-[15px] md:text-base leading-relaxed mb-8">
               Menguasai bisnis di era digital. Diharapkan untuk ilmu bisnis yang 
-              lebih efektif serta ampuh.
+              lebih efektif serta ampuh di pasar global.
             </p>
             <button className="bg-[#facc15] hover:bg-yellow-500 text-white font-bold py-3 px-10 rounded-sm shadow-lg transition-colors">
               Tanya Jurusan
@@ -89,7 +89,7 @@ const JurusanBd = () => {
           <img 
             src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80" 
             alt="Kegiatan Belajar Jurusan Bisnis Digital" 
-            className="w-full h-auto object-cover shadow-sm border border-slate-100"
+            className="w-full h-auto object-cover shadow-sm border border-slate-100 rounded-lg"
           />
         </div>
         <div className="w-full md:w-1/2 flex flex-col items-start">
@@ -117,32 +117,32 @@ const JurusanBd = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
             {/* Card 1 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
-              <div className="w-16 h-16 bg-[#facc15] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
+              <div className="w-16 h-16 bg-[#eab308] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+              </div>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">E-Commerce</span>
+            </div>
+            {/* Card 2 */}
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
+              <div className="w-16 h-16 bg-[#eab308] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>
               </div>
               <span className="font-bold text-slate-800 text-sm tracking-tight">Digital Marketing</span>
             </div>
-            {/* Card 2 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
-              <div className="w-16 h-16 bg-[#facc15] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" /></svg>
-              </div>
-              <span className="font-bold text-slate-800 text-sm tracking-tight">Social Media</span>
-            </div>
             {/* Card 3 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
-              <div className="w-16 h-16 bg-[#facc15] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
+              <div className="w-16 h-16 bg-[#eab308] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" /></svg>
               </div>
-              <span className="font-bold text-slate-800 text-sm tracking-tight">E-Commerce</span>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">Business Analytics</span>
             </div>
             {/* Card 4 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
-              <div className="w-16 h-16 bg-[#facc15] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
+              <div className="w-16 h-16 bg-[#eab308] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
               </div>
-              <span className="font-bold text-slate-800 text-sm tracking-tight">Content Creator</span>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">Creative Content</span>
             </div>
           </div>
         </div>
@@ -240,4 +240,3 @@ const JurusanBd = () => {
 };
 
 export default JurusanBd;
-

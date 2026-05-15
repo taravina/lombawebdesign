@@ -34,9 +34,8 @@ const JurusanKriya = () => {
               {/* Brown block */}
             </div>
 
-            {/* Emblem Overlapping */}
             <div className="absolute top-1/2 -translate-y-1/2 left-8 md:left-16 z-10 flex items-center">
-              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white overflow-hidden">
+              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white overflow-hidden animate-float">
                 <img
                   src="/7 KKBT.png"
                   alt="Logo Kriya"
@@ -63,7 +62,7 @@ const JurusanKriya = () => {
           </div>
 
           {/* Text Content */}
-          <div className="text-center flex flex-col items-center max-w-2xl mx-auto">
+          <div className="text-center flex flex-col items-center max-w-2xl mx-auto animate-fade-up">
             <h1 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-slate-900 mb-4 leading-tight">
               Kriya Kreatif Batik Dan Tekstil<br />
               (KKBT)
@@ -118,28 +117,28 @@ const JurusanKriya = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
             {/* Card 1 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#8b4513] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg>
               </div>
               <span className="font-bold text-slate-800 text-sm tracking-tight">Desain Motif</span>
             </div>
             {/* Card 2 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#8b4513] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
               </div>
               <span className="font-bold text-slate-800 text-sm tracking-tight">Mencanting</span>
             </div>
             {/* Card 3 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#8b4513] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343" /></svg>
               </div>
               <span className="font-bold text-slate-800 text-sm tracking-tight">Pewarnaan</span>
             </div>
             {/* Card 4 */}
-            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#8b4513] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" /></svg>
               </div>

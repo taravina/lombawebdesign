@@ -71,17 +71,17 @@ const Home = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-2xl animate-fade-up">
             SMKN 6 Jember – <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200">
               Sekolah Vokasi Siap Kerja & Berprestasi
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed max-w-2xl font-light">
+          <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed max-w-2xl font-light animate-fade-up delay-200">
             Membentuk tenaga profesional unggul dengan integritas tinggi dan keahlian industri masa depan melalui pendidikan vokasi berkualitas dunia.
           </p>
           
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 animate-fade-up delay-300">
             <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all hover:scale-105 active:scale-95 shadow-lg shadow-blue-500/30">
               Daftar PPDB
             </button>
@@ -102,7 +102,7 @@ const Home = () => {
       </section>
 
       {/* Sambutan & Info Section */}
-      <section className="bg-white relative w-full overflow-hidden pt-20">
+      <section className="bg-white relative w-full overflow-hidden pt-20 reveal">
         
         <div className="max-w-7xl mx-auto px-6 md:px-16 relative z-10 flex flex-col">
           
@@ -111,16 +111,16 @@ const Home = () => {
             
             {/* Left side: Image & Name */}
             <div className="lg:w-5/12 relative flex justify-center lg:justify-start pt-8 md:pl-8">
-              <div className="relative">
+              <div className="relative animate-slide-right">
                 {/* Replace with actual transparent image of the headmaster */}
                 <img 
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" 
                   alt="Kepala Sekolah" 
-                  className="w-64 md:w-[320px] h-auto object-cover rounded-xl"
+                  className="w-64 md:w-[320px] h-auto object-cover rounded-xl shadow-2xl"
                 />
                 
                 {/* Name Plate */}
-                <div className="absolute top-[40%] right-[-1rem] md:right-[-4rem] translate-x-full whitespace-nowrap hidden md:block">
+                <div className="absolute top-[40%] right-[-1rem] md:right-[-4rem] translate-x-full whitespace-nowrap hidden md:block animate-fade-in delay-500">
                   <h4 className="font-bold text-gray-800 text-sm">Kepala Sekolah</h4>
                   <p className="text-gray-700 text-xs">Evi Silviana, S.Pd., M.M.</p>
                 </div>
@@ -128,13 +128,13 @@ const Home = () => {
               </div>
               {/* SMK BISA, SMK HEBAT Box */}
               {/* This box is placed overlapping the left edge of the screen in the design */}
-              <div className="absolute bottom-8 -left-6 md:-left-24 bg-[#82abc9] text-white font-bold py-4 px-8 md:pr-12 md:pl-24 rounded-r-[2rem] border-b-[6px] border-[#8a2c2c] shadow-md text-lg md:text-xl whitespace-nowrap z-20 tracking-wide">
+              <div className="absolute bottom-8 -left-6 md:-left-24 bg-[#82abc9] text-white font-bold py-4 px-8 md:pr-12 md:pl-24 rounded-r-[2rem] border-b-[6px] border-[#8a2c2c] shadow-md text-lg md:text-xl whitespace-nowrap z-20 tracking-wide animate-slide-right delay-300">
                 SMK BISA, SMK HEBAT
               </div>
             </div>
 
             {/* Right side: Welcome Text */}
-            <div className="lg:w-6/12 mt-20 lg:mt-12">
+            <div className="lg:w-6/12 mt-20 lg:mt-12 reveal delay-200">
               <div className="inline-block mb-6">
                 <h2 className="text-2xl md:text-[1.75rem] font-bold text-gray-900 mb-2">
                   Sambutan Kepala Sekolah
@@ -172,16 +172,16 @@ const Home = () => {
             </div>
 
             {/* Stats Section */}
-            <div className="flex flex-col md:flex-row justify-around items-center text-center gap-12 mt-16 md:mt-24 lg:mt-32 pb-8">
-              <div>
+            <div className="flex flex-col md:flex-row justify-around items-center text-center gap-12 mt-16 md:mt-24 lg:mt-32 pb-8 reveal">
+              <div className="reveal delay-100">
                 <h3 className="text-4xl md:text-5xl font-[800] text-gray-800 mb-2">1.000 +</h3>
                 <p className="text-gray-700 font-bold md:text-lg">Pelajar Aktif</p>
               </div>
-              <div>
+              <div className="reveal delay-200">
                 <h3 className="text-4xl md:text-5xl font-[800] text-gray-800 mb-2">1.000.000 +</h3>
                 <p className="text-gray-700 font-bold md:text-lg">Alumni</p>
               </div>
-              <div>
+              <div className="reveal delay-300">
                 <h3 className="text-4xl md:text-5xl font-[800] text-gray-800 mb-2">95%</h3>
                 <p className="text-gray-700 font-bold md:text-lg">Rating Kesuksesan</p>
               </div>
@@ -205,15 +205,15 @@ const Home = () => {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12 md:mb-16 tracking-wide drop-shadow-md">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12 md:mb-16 tracking-wide drop-shadow-md animate-fade-up">
             Berita
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* Card 1 */}
-            <div className="bg-[#f4f6f8] rounded-3xl overflow-hidden shadow-2xl flex flex-col transform transition-transform hover:-translate-y-2 duration-300">
-              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Berita 1" className="w-full h-48 md:h-56 object-cover" />
+            <div className="bg-[#f4f6f8] rounded-3xl overflow-hidden shadow-2xl flex flex-col hover-lift reveal delay-100">
+              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Berita 1" className="w-full h-48 md:h-56 object-cover hover:scale-110 transition-transform duration-700" />
               <div className="p-6 md:p-8 flex flex-col grow">
                 <div className="flex items-center gap-2 text-[#9aa7b5] text-[11px] md:text-xs font-medium mb-3">
                   <span>12-11-2090</span>
@@ -233,8 +233,8 @@ const Home = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-[#f4f6f8] rounded-3xl overflow-hidden shadow-2xl flex flex-col transform transition-transform hover:-translate-y-2 duration-300">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Berita 2" className="w-full h-48 md:h-56 object-cover" />
+            <div className="bg-[#f4f6f8] rounded-3xl overflow-hidden shadow-2xl flex flex-col hover-lift reveal delay-200">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Berita 2" className="w-full h-48 md:h-56 object-cover hover:scale-110 transition-transform duration-700" />
               <div className="p-6 md:p-8 flex flex-col grow">
                 <div className="flex items-center gap-2 text-[#9aa7b5] text-[11px] md:text-xs font-medium mb-3">
                   <span>12-11-2090</span>
@@ -254,8 +254,8 @@ const Home = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-[#f4f6f8] rounded-3xl overflow-hidden shadow-2xl flex flex-col transform transition-transform hover:-translate-y-2 duration-300">
-              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Berita 3" className="w-full h-48 md:h-56 object-cover" />
+            <div className="bg-[#f4f6f8] rounded-3xl overflow-hidden shadow-2xl flex flex-col hover-lift reveal delay-300">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Berita 3" className="w-full h-48 md:h-56 object-cover hover:scale-110 transition-transform duration-700" />
               <div className="p-6 md:p-8 flex flex-col grow">
                 <div className="flex items-center gap-2 text-[#9aa7b5] text-[11px] md:text-xs font-medium mb-3">
                   <span>12-11-2090</span>
@@ -300,7 +300,7 @@ const Home = () => {
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 justify-items-center mb-24">
             {/* Bisnis Digital */}
-            <Link to="/jurusan-bd">
+            <Link to="/jurusan-bd" className="reveal delay-100">
               <img 
                 src="/bdcard.png" 
                 alt="Bisnis Digital" 
@@ -308,7 +308,7 @@ const Home = () => {
               />
             </Link>
             {/* DKV */}
-            <Link to="/jurusan-dkv">
+            <Link to="/jurusan-dkv" className="reveal delay-200">
               <img 
                 src="/dkvcard.png" 
                 alt="Desain Komunikasi Visual" 
@@ -316,7 +316,7 @@ const Home = () => {
               />
             </Link>
             {/* RPL */}
-            <Link to="/jurusan-rpl">
+            <Link to="/jurusan-rpl" className="reveal delay-300">
               <img 
                 src="/rplcard.png" 
                 alt="Rekayasa Perangkat Lunak" 
@@ -324,7 +324,7 @@ const Home = () => {
               />
             </Link>
             {/* KKBT */}
-            <Link to="/jurusan-kriya">
+            <Link to="/jurusan-kriya" className="reveal delay-100">
               <img 
                 src="/kkbtcard.png" 
                 alt="Kriya Kreatif Batik Dan Tekstil" 
@@ -332,7 +332,7 @@ const Home = () => {
               />
             </Link>
             {/* Akuntansi */}
-            <Link to="/jurusan-akl">
+            <Link to="/jurusan-akl" className="reveal delay-200">
               <img 
                 src="/aklcard.png" 
                 alt="Akuntansi" 
@@ -340,7 +340,7 @@ const Home = () => {
               />
             </Link>
             {/* Manajemen Perkantoran */}
-            <Link to="/jurusan-mp">
+            <Link to="/jurusan-mp" className="reveal delay-300">
               <img 
                 src="/mpcard.png" 
                 alt="Manajemen Perkantoran" 
@@ -362,16 +362,16 @@ const Home = () => {
 
       {/* Kegiatan Siswa Grid (Full Width, No Gaps) */}
       <section className="w-full relative">
-        <div className="grid grid-cols-2 md:grid-cols-3">
-          <img src="/foto1ks.png" alt="Kegiatan Siswa 1" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" />
-          <img src="/foto2ks.png" alt="Kegiatan Siswa 2" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" />
-          <img src="/foto3ks.png" alt="Kegiatan Siswa 3" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" />
-          <img src="/foto4ks.png" alt="Kegiatan Siswa 4" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" />
-          <img src="/foto5ks.png" alt="Kegiatan Siswa 5" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" />
-          <img src="/foto6ks.png" alt="Kegiatan Siswa 6" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" />
-          <img src="/foto7ks.png" alt="Kegiatan Siswa 7" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" />
-          <img src="/foto8ks.png" alt="Kegiatan Siswa 8" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" />
-          <img src="/foto9ks.png" alt="Kegiatan Siswa 9" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" />
+        <div className="grid grid-cols-2 md:grid-cols-3 reveal">
+          <img src="/foto1ks.png" alt="Kegiatan Siswa 1" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer hover:scale-[1.02] transition-transform" />
+          <img src="/foto2ks.png" alt="Kegiatan Siswa 2" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer hover:scale-[1.02] transition-transform" />
+          <img src="/foto3ks.png" alt="Kegiatan Siswa 3" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer hover:scale-[1.02] transition-transform" />
+          <img src="/foto4ks.png" alt="Kegiatan Siswa 4" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer hover:scale-[1.02] transition-transform" />
+          <img src="/foto5ks.png" alt="Kegiatan Siswa 5" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer hover:scale-[1.02] transition-transform" />
+          <img src="/foto6ks.png" alt="Kegiatan Siswa 6" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer hover:scale-[1.02] transition-transform" />
+          <img src="/foto7ks.png" alt="Kegiatan Siswa 7" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer hover:scale-[1.02] transition-transform" />
+          <img src="/foto8ks.png" alt="Kegiatan Siswa 8" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer hover:scale-[1.02] transition-transform" />
+          <img src="/foto9ks.png" alt="Kegiatan Siswa 9" className="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer hover:scale-[1.02] transition-transform" />
         </div>
         
         {/* Dark Gradient Overlay over the entire grid */}
@@ -384,11 +384,11 @@ const Home = () => {
       </div>
 
       {/* Kerjasama Content */}
-      <section className="w-full bg-white py-12 md:py-16">
+      <section className="w-full bg-white py-12 md:py-16 reveal">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row gap-10 lg:gap-16">
           
           {/* Left: Featured Image */}
-          <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden shadow-xl group">
+          <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden shadow-xl group reveal delay-100">
             <img 
               src="/kerjasama.png" 
               alt="Kerjasama PT UBIG" 
@@ -397,7 +397,7 @@ const Home = () => {
             
             {/* Dark Gradient Overlay for Text Readability */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex items-end">
-              <div className="p-6 md:p-10 border-l-4 border-white ml-6 md:ml-10 mb-6 md:mb-10">
+              <div className="p-6 md:p-10 border-l-4 border-white ml-6 md:ml-10 mb-6 md:mb-10 animate-slide-right delay-500">
                 <h3 className="text-white text-xl md:text-2xl lg:text-[1.7rem] font-bold leading-snug max-w-2xl drop-shadow-lg">
                   Demi meningkatkan kualitas para siswa agar sesuai dengan keperluan industri, SMKN 6 Jember bekerja sama dengan PT.Ubig
                 </h3>
@@ -406,10 +406,10 @@ const Home = () => {
           </div>
 
           {/* Right: List Items */}
-          <div className="w-full lg:w-[35%] flex flex-col gap-10 justify-center">
+          <div className="w-full lg:w-[35%] flex flex-col gap-10 justify-center reveal delay-300">
             
             {/* Item 1 */}
-            <div className="flex flex-col gap-2 group cursor-pointer">
+            <div className="flex flex-col gap-2 group cursor-pointer hover-lift">
               <span className="text-sm text-gray-500 font-medium">Jumat, 13 Mei 2026</span>
               <h4 className="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-600 transition-colors">
                 Sinergi Ekosistem Pendidikan di Kabupaten Jember...
@@ -420,7 +420,7 @@ const Home = () => {
             </div>
 
             {/* Item 2 */}
-            <div className="flex flex-col gap-2 group cursor-pointer">
+            <div className="flex flex-col gap-2 group cursor-pointer hover-lift">
               <span className="text-sm text-gray-500 font-medium">Jumat, 13 Mei 2026</span>
               <h4 className="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-600 transition-colors">
                 Dalam rangka untuk menjalin hubungan internasional SMK N 6 jember bekerjasama dengan...
