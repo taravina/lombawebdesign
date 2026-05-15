@@ -101,122 +101,125 @@ const JurusanBd = () => {
       </section>
 
       {/* Apa yang Dipelajari Section */}
-      <section className="w-full bg-[#d6a50e] py-20 px-6">
-        <div className="max-w-5xl mx-auto flex flex-col items-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 tracking-wide">Apa yang Dipelajari ?</h2>
+      <section className="w-full bg-gradient-to-b from-[#99790b] to-[#facc15] py-20 px-6">
+        <div className="max-w-6xl mx-auto flex flex-col items-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-16 tracking-wide">Apa yang Dipelajari ?</h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
             {/* Card 1 */}
-            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover:border-yellow-400 hover:-translate-y-1 transition-all duration-300">
-              <div className="w-[45px] h-[45px] bg-[#facc15] rounded-full flex items-center justify-center text-white mb-4 shadow-md">
-                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+              <div className="w-16 h-16 bg-[#facc15] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>
               </div>
-              <span className="font-bold text-slate-800 text-[13px] md:text-[14px]">Programming</span>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">Digital Marketing</span>
             </div>
             {/* Card 2 */}
-            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover:border-yellow-400 hover:-translate-y-1 transition-all duration-300">
-              <div className="w-[45px] h-[45px] bg-[#facc15] rounded-full flex items-center justify-center text-white mb-4 shadow-md">
-                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg>
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+              <div className="w-16 h-16 bg-[#facc15] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" /></svg>
               </div>
-              <span className="font-bold text-slate-800 text-[13px] md:text-[14px]">Database</span>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">Social Media</span>
             </div>
             {/* Card 3 */}
-            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover:border-yellow-400 hover:-translate-y-1 transition-all duration-300">
-              <div className="w-[45px] h-[45px] bg-[#facc15] rounded-full flex items-center justify-center text-white mb-4 shadow-md">
-                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+              <div className="w-16 h-16 bg-[#facc15] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
               </div>
-              <span className="font-bold text-slate-800 text-[13px] md:text-[14px]">Web</span>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">E-Commerce</span>
             </div>
             {/* Card 4 */}
-            <div className="bg-white py-10 px-4 flex flex-col items-center justify-center shadow-lg border border-transparent hover:border-yellow-400 hover:-translate-y-1 transition-all duration-300">
-              <div className="w-[45px] h-[45px] bg-[#facc15] rounded-full flex items-center justify-center text-white mb-4 shadow-md">
-                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+              <div className="w-16 h-16 bg-[#facc15] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
               </div>
-              <span className="font-bold text-slate-800 text-[13px] md:text-[14px]">Mobile</span>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">Content Creator</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Sekilas Informasi Section */}
-      <section className="w-full max-w-6xl mx-auto px-6 py-20 bg-white">
-        <h2 className="text-2xl font-bold text-slate-900 mb-8">Sekilas Informasi</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm">
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Siswa dan Guru" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+      <section className="w-full max-w-6xl mx-auto px-6 py-24 bg-white">
+        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-12 text-center md:text-left">Sekilas Informasi</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
-          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm border border-slate-100/50">
-            <img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&w=600&q=80" alt="Sertifikat BNSP" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group border border-slate-100/50">
+            <img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
-          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm">
-            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Poster Sales Talk" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </section>
 
       {/* Prospek Kerja Section */}
-      <section className="w-full max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <div className="w-full bg-gradient-to-r from-[#facc15] to-[#99790b] rounded-sm py-16 px-8 md:px-12 shadow-md">
-          <h2 className="text-2xl md:text-[28px] font-semibold text-white mb-10 tracking-wide">Prospek Kerja</h2>
+      <section className="w-full max-w-7xl mx-auto px-4 md:px-6 py-16">
+        <div className="w-full bg-[#99790b] rounded-xl py-20 px-8 md:px-16 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 tracking-wide relative z-10 text-center md:text-left">Prospek Kerja</h2>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
             {/* Card 1 */}
-            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover:shadow-lg transition-shadow">
-              <h3 className="font-bold text-slate-900 text-[17px] md:text-xl mb-3">Digital Marketer</h3>
-              <p className="text-slate-600 text-[13px] md:text-sm leading-relaxed">Membangun website responsif dan fungsional untuk kebutuhan bisnis.</p>
+            <div className="bg-white p-8 flex flex-col shadow-lg rounded-lg border-b-4 border-transparent hover:border-[#facc15] transition-all">
+              <h3 className="font-bold text-slate-900 text-lg mb-3">Entrepreneur</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">Membangun dan mengembangkan bisnis digital mandiri di berbagai sektor.</p>
             </div>
             {/* Card 2 */}
-            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover:shadow-lg transition-shadow">
-              <h3 className="font-bold text-slate-900 text-[17px] md:text-xl mb-3">Admin Online Shop</h3>
-              <p className="text-slate-600 text-[13px] md:text-sm leading-relaxed">Mengembangkan aplikasi Android dan iOS yang inovatif.</p>
+            <div className="bg-white p-8 flex flex-col shadow-lg rounded-lg border-b-4 border-transparent hover:border-[#facc15] transition-all">
+              <h3 className="font-bold text-slate-900 text-lg mb-3">Digital Marketer</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">Merancang strategi pemasaran online untuk meningkatkan penjualan produk.</p>
             </div>
             {/* Card 3 */}
-            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover:shadow-lg transition-shadow">
-              <h3 className="font-bold text-slate-900 text-[17px] md:text-xl mb-3">Specialist Social Media</h3>
-              <p className="text-slate-600 text-[13px] md:text-sm leading-relaxed">Mengelola konten dan pertumbuhan akun media sosial.</p>
+            <div className="bg-white p-8 flex flex-col shadow-lg rounded-lg border-b-4 border-transparent hover:border-[#facc15] transition-all">
+              <h3 className="font-bold text-slate-900 text-lg mb-3">Social Media Spec</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">Mengelola konten dan pertumbuhan komunitas di berbagai platform sosial.</p>
             </div>
             {/* Card 4 */}
-            <div className="bg-white p-6 md:p-8 flex flex-col shadow-sm hover:shadow-lg transition-shadow">
-              <h3 className="font-bold text-slate-900 text-[17px] md:text-xl mb-3">Freelancer</h3>
-              <p className="text-slate-600 text-[13px] md:text-sm leading-relaxed">Membangun dan mengembangkan bisnis sendiri.</p>
+            <div className="bg-white p-8 flex flex-col shadow-lg rounded-lg border-b-4 border-transparent hover:border-[#facc15] transition-all">
+              <h3 className="font-bold text-slate-900 text-lg mb-3">Marketplace Admin</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">Mengelola operasional toko online di berbagai platform e-commerce.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Lab Section */}
-      <section className="w-full max-w-6xl mx-auto px-6 py-20 bg-white mb-10">
-        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+      <section className="w-full max-w-6xl mx-auto px-6 py-24 bg-white mb-10">
+        <div className="flex flex-col md:flex-row items-center gap-16 md:gap-24">
           
-          {/* Left Column: Text Content */}
-          <div className="w-full md:w-1/2 flex flex-col items-start pl-0 md:pl-4">
-            <div className="bg-[#facc15] text-slate-800 text-[10px] md:text-[11px] font-bold tracking-widest px-4 py-1.5 rounded-full mb-6 uppercase">
-              BISNIS DIGITAL
-            </div>
-            <h2 className="text-3xl md:text-4xl lg:text-[40px] font-semibold text-slate-900 mb-6 leading-tight tracking-tight">
-              Ruang Diskusi
-            </h2>
-            <p className="text-slate-600 text-[14px] md:text-[15px] leading-relaxed mb-8">
-              A dedicated simulation room designed to mimic a professional office environment, focusing on administrative tasks, business correspondence, and effective corporate communication skills.
-            </p>
-            <a href="#" className="flex items-center gap-2 text-[#d6a50e] font-bold text-[13px] md:text-sm hover:text-yellow-700 transition-colors">
-              Ruang Simulasi
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6a2 2 0 012-2h2l2 2h8a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" />
-              </svg>
-            </a>
-          </div>
-
-          {/* Right Column: Image */}
-          <div className="w-full md:w-1/2 pr-0 md:pr-4">
-            <div className="rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.15)] border border-slate-100/50 relative">
+          {/* Left Column: Image */}
+          <div className="w-full md:w-1/2">
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-100 relative group">
                <img 
                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" 
-                 alt="Ruang Diskusi Bisnis Digital" 
-                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+                 alt="Laboratorium Bisnis Digital" 
+                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                />
                <div className="absolute inset-0 bg-yellow-900/10 pointer-events-none mix-blend-overlay"></div>
             </div>
+          </div>
+
+          {/* Right Column: Text Content */}
+          <div className="w-full md:w-1/2 flex flex-col items-start">
+            <div className="bg-[#facc15] text-slate-900 text-[10px] font-bold tracking-widest px-4 py-1.5 rounded-full mb-6 uppercase">
+              BENGKEL BISNIS
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-slate-900 mb-6 leading-tight">
+              Pusat Inovasi Digital
+            </h2>
+            <p className="text-slate-600 text-[14px] md:text-[15px] leading-relaxed mb-8 text-justify">
+              Laboratorium Bisnis Digital kami dilengkapi dengan peralatan produksi konten multimedia, 
+              studio foto produk, serta area kolaborasi untuk pengembangan ide bisnis kreatif siswa.
+            </p>
+            <a href="#" className="flex items-center gap-2 text-[#d6a50e] font-bold text-sm hover:text-[#99790b] transition-colors group">
+              Lihat Bengkel 
+              <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
           </div>
 
         </div>
@@ -227,3 +230,4 @@ const JurusanBd = () => {
 };
 
 export default JurusanBd;
+

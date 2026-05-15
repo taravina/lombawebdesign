@@ -109,6 +109,130 @@ const JurusanAkl = () => {
           </div>
         </div>
       </section>
+      {/* Apa yang Dipelajari Section */}
+      <section className="w-full bg-gradient-to-b from-[#166534] to-[#22c55e] py-20 px-6">
+        <div className="max-w-6xl mx-auto flex flex-col items-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-16 tracking-wide">Apa yang Dipelajari ?</h2>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+            {/* Card 1 */}
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+              <div className="w-16 h-16 bg-[#22c55e] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+              </div>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">Jurnal Umum</span>
+            </div>
+            {/* Card 2 */}
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+              <div className="w-16 h-16 bg-[#22c55e] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
+              </div>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">Akuntansi Bank</span>
+            </div>
+            {/* Card 3 */}
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+              <div className="w-16 h-16 bg-[#22c55e] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">Perpajakan</span>
+            </div>
+            {/* Card 4 */}
+            <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+              <div className="w-16 h-16 bg-[#22c55e] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              </div>
+              <span className="font-bold text-slate-800 text-sm tracking-tight">MYOB Accounting</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sekilas Informasi Section */}
+      <section className="w-full max-w-6xl mx-auto px-6 py-24 bg-white">
+        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-12 text-center md:text-left">Sekilas Informasi</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group">
+            <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group border border-slate-100/50">
+            <img src="https://images.unsplash.com/photo-1454165833767-02a6ed8a687a?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+        </div>
+      </section>
+
+      {/* Prospek Kerja Section */}
+      <section className="w-full max-w-7xl mx-auto px-4 md:px-6 py-16">
+        <div className="w-full bg-[#166534] rounded-xl py-20 px-8 md:px-16 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+          
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 tracking-wide relative z-10 text-center md:text-left">Prospek Kerja</h2>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+            {/* Card 1 */}
+            <div className="bg-white p-8 flex flex-col shadow-lg rounded-lg border-b-4 border-transparent hover:border-[#22c55e] transition-all">
+              <h3 className="font-bold text-slate-900 text-lg mb-3">Staff Akuntansi</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">Mengelola pencatatan keuangan dan laporan laba rugi perusahaan.</p>
+            </div>
+            {/* Card 2 */}
+            <div className="bg-white p-8 flex flex-col shadow-lg rounded-lg border-b-4 border-transparent hover:border-[#22c55e] transition-all">
+              <h3 className="font-bold text-slate-900 text-lg mb-3">Teller Bank</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">Melayani transaksi perbankan nasabah dengan teliti dan ramah.</p>
+            </div>
+            {/* Card 3 */}
+            <div className="bg-white p-8 flex flex-col shadow-lg rounded-lg border-b-4 border-transparent hover:border-[#22c55e] transition-all">
+              <h3 className="font-bold text-slate-900 text-lg mb-3">Internal Auditor</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">Melakukan verifikasi dan pemeriksaan kepatuhan keuangan organisasi.</p>
+            </div>
+            {/* Card 4 */}
+            <div className="bg-white p-8 flex flex-col shadow-lg rounded-lg border-b-4 border-transparent hover:border-[#22c55e] transition-all">
+              <h3 className="font-bold text-slate-900 text-lg mb-3">Wirausaha</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">Membuka jasa konsultan keuangan atau usaha mandiri yang terorganisir.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Lab Section */}
+      <section className="w-full max-w-6xl mx-auto px-6 py-24 bg-white mb-10">
+        <div className="flex flex-col md:flex-row items-center gap-16 md:gap-24">
+          
+          {/* Left Column: Image */}
+          <div className="w-full md:w-1/2">
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-100 relative group">
+               <img 
+                 src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80" 
+                 alt="Laboratorium Akuntansi" 
+                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+               />
+               <div className="absolute inset-0 bg-green-900/10 pointer-events-none mix-blend-overlay"></div>
+            </div>
+          </div>
+
+          {/* Right Column: Text Content */}
+          <div className="w-full md:w-1/2 flex flex-col items-start">
+            <div className="bg-[#22c55e] text-white text-[10px] font-bold tracking-widest px-4 py-1.5 rounded-full mb-6 uppercase">
+              BANK MINI & LAB
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-slate-900 mb-6 leading-tight">
+              Pusat Praktik Akuntansi
+            </h2>
+            <p className="text-slate-600 text-[14px] md:text-[15px] leading-relaxed mb-8 text-justify">
+              Laboratorium AKL dilengkapi dengan sistem perbankan mini yang mensimulasikan lingkungan kerja nyata, 
+              serta komputer berspesifikasi tinggi untuk pengoperasian software akuntansi modern.
+            </p>
+            <a href="#" className="flex items-center gap-2 text-[#22c55e] font-bold text-sm hover:text-[#166534] transition-colors group">
+              Eksplorasi Lab 
+              <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </section>
 
     </div>
   );

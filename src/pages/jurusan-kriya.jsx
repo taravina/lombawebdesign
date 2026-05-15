@@ -84,7 +84,7 @@ const JurusanKriya = () => {
       <section className="w-full max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12 md:gap-20 bg-white">
         <div className="w-full md:w-1/2">
           <img 
-            src="https://images.unsplash.com/photo-1511211022447-7bc97017ba5e?auto=format&fit=crop&w=800&q=80" 
+            src="/7 KKBT.png" 
             alt="Kegiatan Membatik" 
             className="w-full h-auto object-cover border-4 border-white shadow-sm rounded-lg"
           />
