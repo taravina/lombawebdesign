@@ -84,10 +84,14 @@ const Home = () => {
             <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all hover:scale-105 active:scale-95 shadow-lg shadow-blue-500/30">
               Daftar PPDB
             </button>
-            <button className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl transition-all border border-white/30 backdrop-blur-md hover:scale-105 active:scale-95">
+            <a 
+              href="#kompetensi-keahlian"
+              className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl transition-all border border-white/30 backdrop-blur-md hover:scale-105 active:scale-95 inline-block"
+            >
               Lihat Jurusan
-            </button>
+            </a>
           </div>
+
         </div>
 
         {/* Floating Indicator (Optional but nice) */}
@@ -274,7 +278,8 @@ const Home = () => {
       </section>
 
       {/* Kompetensi Keahlian Section */}
-      <section className="relative w-full py-24 bg-[#f4f9ff] overflow-hidden">
+      <section id="kompetensi-keahlian" className="relative w-full py-24 bg-[#f4f9ff] overflow-hidden">
+
         {/* Decorative Background Blobs */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] h-[400px] bg-[#e6f0fa] rounded-b-[50%] z-0"></div>
         <div className="absolute top-48 -left-20 w-80 h-80 bg-[#e6f0fa] rounded-full z-0"></div>
@@ -294,42 +299,55 @@ const Home = () => {
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 justify-items-center mb-24">
             {/* Bisnis Digital */}
-            <img 
-              src="/bdcard.png" 
-              alt="Bisnis Digital" 
-              className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
-            />
+            <a href="#jurusan-bd">
+              <img 
+                src="/bdcard.png" 
+                alt="Bisnis Digital" 
+                className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
+              />
+            </a>
             {/* DKV */}
-            <img 
-              src="/dkvcard.png" 
-              alt="Desain Komunikasi Visual" 
-              className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
-            />
+            <a href="#jurusan-dkv">
+              <img 
+                src="/dkvcard.png" 
+                alt="Desain Komunikasi Visual" 
+                className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
+              />
+            </a>
             {/* RPL */}
-            <img 
-              src="/rplcard.png" 
-              alt="Rekayasa Perangkat Lunak" 
-              className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
-            />
+            <a href="#jurusan-rpl">
+              <img 
+                src="/rplcard.png" 
+                alt="Rekayasa Perangkat Lunak" 
+                className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
+              />
+            </a>
             {/* KKBT */}
-            <img 
-              src="/kkbtcard.png" 
-              alt="Kriya Kreatif Batik Dan Tekstil" 
-              className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
-            />
+            <a href="#jurusan-kriya">
+              <img 
+                src="/kkbtcard.png" 
+                alt="Kriya Kreatif Batik Dan Tekstil" 
+                className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
+              />
+            </a>
             {/* Akuntansi */}
-            <img 
-              src="/aklcard.png" 
-              alt="Akuntansi" 
-              className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
-            />
+            <a href="#jurusan-akl">
+              <img 
+                src="/aklcard.png" 
+                alt="Akuntansi" 
+                className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
+              />
+            </a>
             {/* Manajemen Perkantoran */}
-            <img 
-              src="/mpcard.png" 
-              alt="Manajemen Perkantoran" 
-              className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
-            />
+            <a href="#jurusan-mp">
+              <img 
+                src="/mpcard.png" 
+                alt="Manajemen Perkantoran" 
+                className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
+              />
+            </a>
           </div>
+
 
           {/* Kegiatan Siswa Title */}
           <div className="flex justify-center mt-12 pb-8">

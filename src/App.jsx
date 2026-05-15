@@ -9,6 +9,10 @@ import JurusanRpl from './pages/jurusan-rpl'
 import JurusanMp from './pages/jurusan-mp'
 import JurusanBd from './pages/jurusan-bd'
 import JurusanAkl from './pages/jurusan-akl'
+import JurusanDkv from './pages/jurusan-dkv'
+import JurusanKriya from './pages/jurusan-kriya'
+
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -45,7 +49,11 @@ function App() {
         {currentPage === 'jurusan-mp' && <JurusanMp />}
         {currentPage === 'jurusan-bd' && <JurusanBd />}
         {currentPage === 'jurusan-akl' && <JurusanAkl />}
+        {currentPage === 'jurusan-dkv' && <JurusanDkv />}
+        {currentPage === 'jurusan-kriya' && <JurusanKriya />}
       </div>
+
+
 
       <Footer />
     </div>

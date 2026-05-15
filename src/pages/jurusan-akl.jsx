@@ -42,7 +42,7 @@ const JurusanAkl = () => {
               <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white">
                   <div className="w-full h-full rounded-full border-2 border-green-600 flex items-center justify-center bg-slate-50 overflow-hidden relative">
                     <img 
-                      src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=300&q=80" 
+                      src="1 AKUNTANSI.png" 
                       alt="Logo AKL Placeholder" 
                       className="w-full h-full object-cover opacity-80" 
                     />
