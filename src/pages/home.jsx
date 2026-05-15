@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [isPlaying, setIsPlaying] = React.useState(false);
@@ -299,53 +300,53 @@ const Home = () => {
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 justify-items-center mb-24">
             {/* Bisnis Digital */}
-            <a href="#jurusan-bd">
+            <Link to="/jurusan-bd">
               <img 
                 src="/bdcard.png" 
                 alt="Bisnis Digital" 
                 className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
               />
-            </a>
+            </Link>
             {/* DKV */}
-            <a href="#jurusan-dkv">
+            <Link to="/jurusan-dkv">
               <img 
                 src="/dkvcard.png" 
                 alt="Desain Komunikasi Visual" 
                 className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
               />
-            </a>
+            </Link>
             {/* RPL */}
-            <a href="#jurusan-rpl">
+            <Link to="/jurusan-rpl">
               <img 
                 src="/rplcard.png" 
                 alt="Rekayasa Perangkat Lunak" 
                 className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
               />
-            </a>
+            </Link>
             {/* KKBT */}
-            <a href="#jurusan-kriya">
+            <Link to="/jurusan-kriya">
               <img 
                 src="/kkbtcard.png" 
                 alt="Kriya Kreatif Batik Dan Tekstil" 
                 className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
               />
-            </a>
+            </Link>
             {/* Akuntansi */}
-            <a href="#jurusan-akl">
+            <Link to="/jurusan-akl">
               <img 
                 src="/aklcard.png" 
                 alt="Akuntansi" 
                 className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
               />
-            </a>
+            </Link>
             {/* Manajemen Perkantoran */}
-            <a href="#jurusan-mp">
+            <Link to="/jurusan-mp">
               <img 
                 src="/mpcard.png" 
                 alt="Manajemen Perkantoran" 
                 className="w-72 md:w-80 object-contain rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transform transition-transform hover:-translate-y-2 hover:shadow-2xl duration-300"
               />
-            </a>
+            </Link>
           </div>
 
 

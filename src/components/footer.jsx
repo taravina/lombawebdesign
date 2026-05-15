@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -38,11 +38,11 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-6">Program Studi</h4>
             <ul className="space-y-4 text-sm font-medium">
-              <li><a href="#" className="hover:text-white transition-colors">Rekayasa Perangkat Lunak</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Desain Komunikasi Visual</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Akuntansi</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Bisnis Digital Dan Pemasaran</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Kriya Kreatif Batik Dan Tekstil</a></li>
+              <li><Link to="/jurusan-rpl" className="hover:text-white transition-colors">Rekayasa Perangkat Lunak</Link></li>
+              <li><Link to="/jurusan-dkv" className="hover:text-white transition-colors">Desain Komunikasi Visual</Link></li>
+              <li><Link to="/jurusan-akl" className="hover:text-white transition-colors">Akuntansi</Link></li>
+              <li><Link to="/jurusan-bd" className="hover:text-white transition-colors">Bisnis Digital Dan Pemasaran</Link></li>
+              <li><Link to="/jurusan-kriya" className="hover:text-white transition-colors">Kriya Kreatif Batik Dan Tekstil</Link></li>
             </ul>
           </div>
 
@@ -50,9 +50,9 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-6">Tautan Cepat</h4>
             <ul className="space-y-4 text-sm font-medium">
-              <li><a href="#home" className="hover:text-white transition-colors">Beranda</a></li>
-              <li><a href="#about" className="hover:text-white transition-colors">Tentang</a></li>
-              <li><a href="#kontak" className="hover:text-white transition-colors">Kontak Kami</a></li>
+              <li><Link to="/" className="hover:text-white transition-colors">Beranda</Link></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">Tentang</Link></li>
+              <li><Link to="/kontak" className="hover:text-white transition-colors">Kontak Kami</Link></li>
               <li><a href="#" className="hover:text-white transition-colors">Berita Terkini</a></li>
             </ul>
           </div>
