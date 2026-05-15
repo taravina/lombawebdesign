@@ -3,19 +3,19 @@ import React from 'react';
 const JurusanMp = () => {
   return (
     <div className="w-full bg-white font-sans flex flex-col">
-      
+
       {/* Hero Section */}
       <section className="w-full min-h-screen pt-28 pb-16 flex flex-col items-center justify-center bg-gradient-to-b from-[#b8b2dc] via-[#dcd8ef] to-[#f4f2f9] text-slate-800 relative overflow-hidden">
-        
+
         {/* Decorative Blur Backgrounds if needed */}
         <div className="absolute top-0 left-0 w-full h-1/3 bg-white/20 blur-[100px] pointer-events-none"></div>
 
         {/* Main Container */}
         <div className="max-w-4xl w-full px-6 flex flex-col items-center relative z-10">
-          
+
           {/* Certificate / ID Card Style */}
           <div className="w-full bg-white rounded-xl shadow-2xl overflow-hidden relative border border-white/50 mb-12 aspect-[16/9] md:aspect-[21/9] flex flex-col">
-            
+
             {/* Top Section */}
             <div className="flex justify-between items-start px-8 pt-8">
               {/* Dotted Pattern */}
@@ -24,7 +24,7 @@ const JurusanMp = () => {
                   <div key={i} className="w-1.5 h-1.5 rounded-full bg-slate-300"></div>
                 ))}
               </div>
-              
+
               {/* LSP Text */}
               <div className="font-bold text-slate-800 text-sm md:text-base tracking-wide">
                 LSP-P1 SMKN 6 JEMBER
@@ -40,11 +40,11 @@ const JurusanMp = () => {
             <div className="absolute top-1/2 -translate-y-1/2 left-8 md:left-16 z-10 flex items-center">
               {/* Logo MP Asli */}
               <div className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center justify-center relative bg-white p-2 border-4 border-white">
-                  <img 
-                    src="/3 MANAJEMEN PERKANTORAN.png" 
-                    alt="Logo Manajemen Perkantoran SMKN 6 Jember" 
-                    className="w-full h-full object-contain drop-shadow-sm" 
-                  />
+                <img
+                  src="/3 MANAJEMEN PERKANTORAN.png"
+                  alt="Logo Manajemen Perkantoran SMKN 6 Jember"
+                  className="w-full h-full object-contain drop-shadow-sm"
+                />
               </div>
             </div>
 
@@ -67,7 +67,7 @@ const JurusanMp = () => {
           {/* Text Content */}
           <div className="text-center flex flex-col items-center max-w-2xl mx-auto">
             <h1 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-slate-900 mb-4 leading-tight">
-              Manajemen Perkantoran<br/>
+              Manajemen Perkantoran<br />
               (MP)
             </h1>
             <p className="text-slate-600 text-[15px] md:text-base leading-relaxed mb-8">
@@ -85,9 +85,9 @@ const JurusanMp = () => {
       <section className="w-full max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12 md:gap-20 bg-white">
         <div className="w-full md:w-1/2">
           {/* Placeholder for the classroom activity image */}
-          <img 
-            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80" 
-            alt="Kegiatan Belajar Jurusan MP" 
+          <img
+            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80"
+            alt="Kegiatan Belajar Jurusan MP"
             className="w-full h-auto object-cover border-4 border-white shadow-sm"
           />
         </div>
@@ -97,14 +97,14 @@ const JurusanMp = () => {
             Jurusan Manajemen Perkantoran mempersiapkan siswa untuk menjadi tenaga administrasi yang profesional, terampil, dan komunikatif. Siswa akan mempelajari pengelolaan dokumen, komunikasi bisnis, pelayanan pelanggan, serta penggunaan teknologi perkantoran modern. Selain itu, siswa juga dilatih untuk bekerja secara rapi, sistematis, dan efisien dalam lingkungan kerja. Dengan keterampilan ini, lulusan mampu beradaptasi di berbagai bidang pekerjaan yang membutuhkan kemampuan administrasi dan manajemen operasional kantor.
           </p>
           <div className="flex gap-5">
-             {/* Twitter Icon */}
-             <a href="#" className="text-slate-800 hover:text-blue-500 transition-colors">
-                <svg className="w-[22px] h-[22px] fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-             </a>
-             {/* YouTube Icon */}
-             <a href="#" className="text-slate-800 hover:text-red-600 transition-colors">
-                <svg className="w-[22px] h-[22px] fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-             </a>
+            {/* Twitter Icon */}
+            <a href="#" className="text-slate-800 hover:text-blue-500 transition-colors">
+              <svg className="w-[22px] h-[22px] fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" /></svg>
+            </a>
+            {/* YouTube Icon */}
+            <a href="#" className="text-slate-800 hover:text-red-600 transition-colors">
+              <svg className="w-[22px] h-[22px] fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+            </a>
           </div>
         </div>
       </section>
@@ -195,6 +195,7 @@ const JurusanMp = () => {
         </div>
       </section>
 
+
       {/* Lab Section */}
       <section className="w-full max-w-6xl mx-auto px-6 py-24 bg-white mb-10">
         <div className="flex flex-col md:flex-row items-center gap-16 md:gap-24">
@@ -230,7 +231,6 @@ const JurusanMp = () => {
               </svg>
             </a>
           </div>
-
         </div>
       </section>
 
