@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../router';
 
 const Home = () => {
   const [isPlaying, setIsPlaying] = React.useState(false);
