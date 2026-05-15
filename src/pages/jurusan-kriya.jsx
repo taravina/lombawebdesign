@@ -99,6 +99,8 @@ const JurusanKriya = () => {
             maupun dekoratif yang memiliki nilai jual tinggi.
           </p>
         </div>
+      </section>
+
       {/* Apa yang Dipelajari Section */}
       <section className="w-full bg-gradient-to-b from-[#5d2e0c] to-[#8b4513] py-20 px-6">
         <div className="max-w-6xl mx-auto flex flex-col items-center">
