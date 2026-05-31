@@ -156,15 +156,15 @@ const JurusanRpl = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm reveal delay-100">
             {/* Menggunakan placeholder gambar, Anda dapat menggantinya nanti */}
-            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80" alt="Penyerahan Sertifikat" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <img src="1rplinformasi.png" alt="Penyerahan Sertifikat" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm border border-slate-100/50 reveal delay-200">
             {/* Menggunakan placeholder gambar, Anda dapat menggantinya nanti */}
-            <img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&w=600&q=80" alt="Sertifikat BNSP" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <img src="2rplinformasi.png" alt="Sertifikat BNSP" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-sm reveal delay-300">
             {/* Menggunakan placeholder gambar, Anda dapat menggantinya nanti */}
-            <img src="https://images.unsplash.com/photo-1523580494112-071d16940a28?auto=format&fit=crop&w=600&q=80" alt="Kunjungan Industri" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <img src="3rplinformasi.png" alt="Kunjungan Industri" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </section>

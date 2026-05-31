@@ -1,6 +1,50 @@
-import React from 'react';
-
+import React, { useRef, useState, useEffect } from 'react';
 const About = () => {
+  const [activeDot, setActiveDot] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Drag to scroll state
+  const carouselRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeftPos, setScrollLeftPos] = useState(0);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - carouselRef.current.offsetLeft);
+    setScrollLeftPos(carouselRef.current.scrollLeft);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - carouselRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    carouselRef.current.scrollLeft = scrollLeftPos - walk;
+  };
+
+  const scrollLeft = () => {
+    setActiveDot((prev) => (prev - 1 + 3) % 3);
+  };
+
+  const scrollRight = () => {
+    setActiveDot((prev) => (prev + 1) % 3);
+  };
+
+  const scrollToCard = (index) => {
+    setActiveDot(index);
+  };
+
+
+
   return (
     <div className="w-full bg-white">
       {/* Hero Section of About */}
@@ -10,41 +54,32 @@ const About = () => {
           {/* Left Content */}
           <div className="w-full lg:w-1/2 flex flex-col items-start reveal">
             {/* Badge */}
-            <div className="bg-[#e4effc] text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm animate-fade-in delay-300">
+            {/* <div className="bg-[#e4effc] text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm animate-fade-in delay-300">
               Established 1995
-            </div>
+            </div> */}
 
             {/* Heading */}
             <div className="mb-6 flex flex-col items-start animate-slide-right">
               <h2 className="text-5xl md:text-6xl md:text-[4.5rem] font-bold text-white mb-2 leading-tight">
                 Kami siap
               </h2>
-              <div className="bg-[#b33a3a] px-4 py-2 inline-block">
+              <div className="bg-blue-600 px-4 py-2 inline-block">
                 <h2 className="text-5xl md:text-6xl md:text-[4.5rem] font-bold text-white leading-none">
-                  Menempah
+                  Menempa
                 </h2>
               </div>
             </div>
 
             {/* Description */}
             <p className="text-white/90 text-lg leading-relaxed max-w-lg mb-12 animate-fade-up delay-500">
-              SMKN 6 Jember has been at the forefront of vocational education for nearly three decades, shaping the future of Indonesia's industrial workforce through rigorous training and academic integrity.
+              SMKN 6 Jember telah berada di garis depan pendidikan vokasi selama hampir tiga dekade, membentuk masa depan tenaga kerja industri Indonesia melalui pelatihan disiplin dan integritas akademik.
             </p>
 
             {/* Stats Cards */}
             <div className="flex flex-wrap gap-4 w-full">
-              <div className="bg-white rounded-2xl p-6 flex-1 min-w-[120px] flex flex-col items-center justify-center shadow-lg hover-lift animate-scale delay-700">
-                <h3 className="text-3xl font-bold text-slate-800 mb-1">30+</h3>
-                <p className="text-slate-500 text-xs text-center font-medium">Tahun pengalaman</p>
-              </div>
-              <div className="bg-white rounded-2xl p-6 flex-1 min-w-[120px] flex flex-col items-center justify-center shadow-lg hover-lift animate-scale delay-[800ms]">
-                <h3 className="text-3xl font-bold text-slate-800 mb-1">5k+</h3>
-                <p className="text-slate-500 text-xs text-center font-medium">Alumni Sukses</p>
-              </div>
-              <div className="bg-white rounded-2xl p-6 flex-1 min-w-[120px] flex flex-col items-center justify-center shadow-lg hover-lift animate-scale delay-[900ms]">
-                <h3 className="text-3xl font-bold text-slate-800 mb-1">A+</h3>
-                <p className="text-slate-500 text-xs text-center font-medium">Akreditasi</p>
-              </div>
+              
+              
+              
             </div>
           </div>
 
@@ -53,7 +88,7 @@ const About = () => {
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/20 hover-scale duration-500">
               {/* Placeholder Image for the building */}
               <img 
-                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80" 
+                src="smea.jpeg" 
                 alt="Gedung SMKN 6 Jember" 
                 className="w-full h-auto object-cover aspect-[4/3] animate-float"
               />
@@ -84,7 +119,7 @@ const About = () => {
             {/* Visi Image */}
             <div className="w-full md:w-5/12 flex justify-center md:justify-end reveal delay-300">
               <img 
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" 
+                src="jakakoding 1.png" 
                 alt="Siswa Belajar dengan Laptop" 
                 className="w-full max-w-[350px] aspect-[4/5] object-cover rounded-[2rem] shadow-lg hover-scale transition-transform duration-500"
               />
@@ -103,7 +138,7 @@ const About = () => {
             {/* Misi Image */}
             <div className="w-full md:w-5/12 flex justify-center md:justify-start reveal delay-300">
               <img 
-                src="https://images.unsplash.com/photo-1523580494112-071d4581563e?auto=format&fit=crop&w=600&q=80" 
+                src="fashion_show.png" 
                 alt="Siswa Menerima Penghargaan" 
                 className="w-full max-w-[350px] aspect-[4/5] object-cover rounded-[2rem] shadow-lg hover-scale transition-transform duration-500"
               />
@@ -140,17 +175,13 @@ const About = () => {
             <div className="relative w-64 md:w-[350px] h-[110%] flex items-end justify-center">
               
               {/* PLACEHOLDER: Ini adalah foto sementara karena file PNG asli Ibu Erni belum di-upload. */}
-              <img 
+              {/* <img 
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
                 alt="Waka Kesiswaan Placeholder" 
                 className="w-[80%] h-[90%] object-cover object-top rounded-2xl shadow-2xl"
-              />
-
-              <div className="absolute bottom-6 md:bottom-12 -left-4 md:-left-16 text-white drop-shadow-md z-20">
-                <p className="text-sm md:text-base font-medium opacity-90">Waka kesiswaan</p>
-                <p className="text-lg md:text-xl font-bold">Erni Sumarliah, S.Pd.</p>
-              </div>
+              /> */}
             </div>
+
           </div>
         </div>
       </section>
@@ -158,7 +189,7 @@ const About = () => {
       {/* Prestasi Section */}
       <section className="w-full py-20 bg-[#8baec5] flex flex-col items-center relative overflow-hidden reveal">
         {/* Section Title */}
-        <div className="bg-[#da2929] px-8 py-2 mb-16 shadow-lg z-10 animate-fade-down">
+        <div className="bg-blue-600 px-8 py-2 mb-16 shadow-lg z-10 animate-fade-down">
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-wide">Prestasi</h2>
         </div>
 
@@ -166,131 +197,107 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 w-full flex items-center justify-center gap-6 relative z-10">
           
           {/* Left Arrow */}
-          <button className="hidden md:flex w-12 h-12 bg-white rounded-full items-center justify-center shadow-lg hover:bg-gray-50 transition-colors z-20 shrink-0">
+          {/* <button 
+            onClick={scrollLeft}
+            className="hidden md:flex w-12 h-12 bg-white rounded-full items-center justify-center shadow-lg hover:bg-gray-50 active:scale-95 transition-all z-20 shrink-0 cursor-pointer"
+            aria-label="Scroll left"
+          >
             <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-          </button>
+          </button> */}
 
           {/* Cards Wrapper */}
-          <div className="flex gap-6 overflow-x-auto pb-8 snap-x hide-scrollbar reveal delay-200">
+          <div 
+            ref={carouselRef}
+            onMouseDown={handleMouseDown}
+            onMouseLeave={() => { setIsHovered(false); handleMouseLeave(); }}
+            onMouseUp={handleMouseUp}
+            onMouseMove={handleMouseMove}
+            onMouseEnter={() => setIsHovered(true)}
+            className="flex gap-6 overflow-x-auto pb-8 snap-x hide-scrollbar reveal delay-200 scroll-smooth cursor-grab active:cursor-grabbing select-none"
+          >
             
             {/* Card 1 */}
             <div className="w-[300px] md:w-[320px] bg-white rounded-xl overflow-hidden shadow-xl shrink-0 snap-center flex flex-col hover-lift">
-              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80" alt="Prestasi 1" className="w-full h-56 object-cover" />
+              <img src="Mask group.png" alt="Prestasi 1" className="w-full h-56 object-cover pointer-events-none" />
               <div className="p-6 flex flex-col grow">
-                <h4 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Rapat Antar Sekola SMK Se-Indonesia</h4>
+                <h4 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Juara 1 LKS Akuntansi</h4>
                 <p className="text-slate-600 text-xs leading-relaxed mb-6">
-                  Smamda.sch.id — SMA Muhammadiyah 2 (SMAMDA) Sidoarjo menggelar Rapat Kelulusan Murid Kelas X...alu Untuk Rapat Klulusan ini di dasari oleh...
+                  Kontingen SMKN 6 Jember berhasil meraih Juara 1 Lomba Kompetensi Siswa (LKS) Dikmen 2026 bidang Akuntansi tingkat Provinsi Jawa Timur. Prestasi ini menjadi bukti kompetensi siswa dalam bidang akuntansi dan keuangan serta mampu bersaing di tingkat provinsi.
                 </p>
                 <div className="mt-auto">
-                  <button className="bg-[#da2929] hover:bg-red-700 text-white text-xs font-semibold px-5 py-2 rounded-full transition-colors">
+                  {/* <button className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-5 py-2 rounded-full transition-colors cursor-pointer">
                     Lihat selengkap nya
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div className="w-[300px] md:w-[320px] bg-white rounded-xl overflow-hidden shadow-xl shrink-0 snap-center flex flex-col hover-lift delay-100">
-              <img src="https://images.unsplash.com/photo-1546410531-bea5aad104ea?auto=format&fit=crop&w=600&q=80" alt="Prestasi 2" className="w-full h-56 object-cover" />
+            <div className="w-[300px] md:w-[320px] bg-white rounded-xl overflow-hidden shadow-xl shrink-0 snap-center flex flex-col hover-lift delay-75">
+              <img src="Mask group2.png" alt="Prestasi 2" className="w-full h-56 object-cover pointer-events-none" />
               <div className="p-6 flex flex-col grow">
-                <h4 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Rapat Antar Sekola SMK Se-Indonesia</h4>
+                <h4 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Juara 2 Web Programming</h4>
                 <p className="text-slate-600 text-xs leading-relaxed mb-6">
-                  Smamda.sch.id — SMA Muhammadiyah 2 (SMAMDA) Sidoarjo menggelar Rapat Kelulusan Murid Kelas X...alu Untuk Rapat Klulusan ini di dasari oleh...
+                  Tim Alpha dari jurusan Rekayasa Perangkat Lunak SMKN 6 Jember berhasil meraih Juara 2 Lomba Web Programming dalam rangka Dies Natalis JTI. Pencapaian ini menunjukkan kemampuan siswa dalam pengembangan web, pemecahan masalah, dan kerja sama tim yang baik.
                 </p>
                 <div className="mt-auto">
-                  <button className="bg-[#da2929] hover:bg-red-700 text-white text-xs font-semibold px-5 py-2 rounded-full transition-colors">
+                  {/* <button className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-5 py-2 rounded-full transition-colors cursor-pointer">
                     Lihat selengkap nya
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
 
             {/* Card 3 */}
-            <div className="w-[300px] md:w-[320px] bg-white rounded-xl overflow-hidden shadow-xl shrink-0 snap-center flex flex-col hover-lift delay-200">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Prestasi 3" className="w-full h-56 object-cover" />
+            <div className="w-[300px] md:w-[320px] bg-white rounded-xl overflow-hidden shadow-xl shrink-0 snap-center flex flex-col hover-lift delay-150">
+              <img src="Mask group3.png" alt="Prestasi 3" className="w-full h-56 object-cover pointer-events-none" />
               <div className="p-6 flex flex-col grow">
-                <h4 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Rapat Antar Sekola SMK Se-Indonesia</h4>
+                <h4 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Prestasi Gemilang SMKN 6 Jember</h4>
                 <p className="text-slate-600 text-xs leading-relaxed mb-6">
-                  Smamda.sch.id — SMA Muhammadiyah 2 (SMAMDA) Sidoarjo menggelar Rapat Kelulusan Murid Kelas X...alu Untuk Rapat Klulusan ini di dasari oleh...
+                 Siswa SMKN 6 Jember berhasil meraih berbagai prestasi dengan memperoleh Juara 1, Juara 2, dan Juara 3 pada sejumlah kompetisi. Keberhasilan ini menjadi bukti semangat, dedikasi, dan kualitas pendidikan yang terus dikembangkan di lingkungan sekolah.
                 </p>
                 <div className="mt-auto">
-                  <button className="bg-[#da2929] hover:bg-red-700 text-white text-xs font-semibold px-5 py-2 rounded-full transition-colors">
+                  {/* <button className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-5 py-2 rounded-full transition-colors cursor-pointer">
                     Lihat selengkap nya
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
+
           </div>
 
           {/* Right Arrow */}
-          <button className="hidden md:flex w-12 h-12 bg-white rounded-full items-center justify-center shadow-lg hover:bg-gray-50 transition-colors z-20 shrink-0">
+          {/* <button 
+            onClick={scrollRight}
+            className="hidden md:flex w-12 h-12 bg-white rounded-full items-center justify-center shadow-lg hover:bg-gray-50 active:scale-95 transition-all z-20 shrink-0 cursor-pointer"
+            aria-label="Scroll right"
+          >
             <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </button>
+          </button> */}
           
         </div>
 
         {/* Carousel Indicators */}
-        <div className="flex gap-2 mt-8 z-10">
-          <div className="w-2.5 h-2.5 rounded-full bg-slate-800"></div>
-          <div className="w-2.5 h-2.5 rounded-full bg-white/60"></div>
-          <div className="w-2.5 h-2.5 rounded-full bg-white/60"></div>
-          <div className="w-2.5 h-2.5 rounded-full bg-white/60"></div>
-        </div>
+        {/* <div className="flex gap-2 mt-8 z-10">
+          {[0, 1, 2].map((index) => (
+            <button
+              key={index}
+              onClick={() => scrollToCard(index)}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
+                activeDot === index ? 'bg-slate-800 scale-125' : 'bg-white/60 hover:bg-white/95'
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div> */}
 
       </section>
 
-      {/* Staf Pengajar dan Management Section */}
-      <section className="w-full bg-white py-20 md:py-28">
-        <div className="max-w-5xl mx-auto px-6">
-          
-          {/* Section Title */}
-          <div className="flex justify-center items-center gap-2 mb-12 md:mb-16">
-            <h2 className="text-xl md:text-2xl font-bold text-slate-900 tracking-wide">Staf Pengajar dan</h2>
-            <div className="bg-[#b33a3a] px-3 py-1 rounded shadow-sm">
-              <h2 className="text-xl md:text-2xl font-bold text-white tracking-wide">Management</h2>
-            </div>
-          </div>
 
-          {/* Grid of Staff */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 lg:gap-8 reveal">
-            {/* Array of staff mapped manually to match the exact order and placeholders */}
-            {[
-              "Pokja PKL", "Waka Humas", "Waka Kesiswaan",
-              "Waka PSDM", "Waka Sarpras", "Pokja BKK",
-              "Manajement Bank mini", "Manajement Kosmeta", "Pokja Matematika",
-              "Pokja IPAS", "Pokja B.Ing", "Pokja B.Ind",
-              "Pokja Produktif", "Pokja PKN", "Pokja B.Jawa"
-            ].map((role, index) => (
-              <div key={index} className={`relative w-full aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden shadow-lg group reveal delay-[${(index % 3) * 100}ms]`}>
-                {/* Image Placeholder (You can replace src with real images later) */}
-                <img 
-                  src={`https://images.unsplash.com/photo-${1500000000000 + index * 10000}?auto=format&fit=crop&w=400&q=80`} 
-                  alt={role} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 bg-gray-200"
-                  onError={(e) => {
-                    // Fallback to a random portrait if the specific ID fails
-                    e.target.src = "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80";
-                  }}
-                />
-                
-                {/* Dark Gradient Overlay for Text */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end opacity-80 group-hover:opacity-100 transition-opacity">
-                  <div className="p-4 md:p-5 w-full">
-                    <h3 className="text-white font-bold text-sm md:text-base leading-tight drop-shadow-md">
-                      {role}
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
 
     </div>
   );

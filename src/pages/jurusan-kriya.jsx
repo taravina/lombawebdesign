@@ -153,13 +153,13 @@ const JurusanKriya = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-12 text-center md:text-left">Sekilas Informasi</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group">
-            <img src="https://images.unsplash.com/photo-1511211022447-7bc97017ba5e?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="2kkbt.png" alt="Sekilas Info 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group border border-slate-100/50">
-            <img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="2mp.png" alt="Sekilas Info 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group">
-            <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="1kkbt.png" alt="Sekilas Info 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </section>
@@ -204,7 +204,7 @@ const JurusanKriya = () => {
           <div className="w-full md:w-1/2">
             <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-100 relative group">
               <img
-                src="https://images.unsplash.com/photo-1520038410233-7141f77e49aa?auto=format&fit=crop&w=800&q=80"
+                src="kkbtfoto.png"
                 alt="Laboratorium Kriya"
                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
               />

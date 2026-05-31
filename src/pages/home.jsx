@@ -114,9 +114,9 @@ const Home = () => {
               <div className="relative animate-slide-right">
                 {/* Replace with actual transparent image of the headmaster */}
                 <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" 
+                  src="/POSTER TIM MEDIA.png" 
                   alt="Kepala Sekolah" 
-                  className="w-64 md:w-[320px] h-auto object-cover rounded-xl shadow-2xl"
+                  className="w-64 md:w-[320px] h-auto object-cover rounded-xl shadow-2xl bg-transparent"
                 />
                 
                 {/* Name Plate */}
@@ -128,7 +128,7 @@ const Home = () => {
               </div>
               {/* SMK BISA, SMK HEBAT Box */}
               {/* This box is placed overlapping the left edge of the screen in the design */}
-              <div className="absolute bottom-8 -left-6 md:-left-24 bg-[#82abc9] text-white font-bold py-4 px-8 md:pr-12 md:pl-24 rounded-r-[2rem] border-b-[6px] border-[#8a2c2c] shadow-md text-lg md:text-xl whitespace-nowrap z-20 tracking-wide animate-slide-right delay-300">
+              <div className="absolute bottom-8 -left-6 md:-left-24 bg-[#82abc9] text-white font-bold py-4 px-8 md:pr-12 md:pl-24 rounded-r-[2rem] border-b-[6px] border-blue-800 shadow-md text-lg md:text-xl whitespace-nowrap z-20 tracking-wide animate-slide-right delay-300">
                 SMK BISA, SMK HEBAT
               </div>
             </div>
@@ -139,8 +139,8 @@ const Home = () => {
                 <h2 className="text-2xl md:text-[1.75rem] font-bold text-gray-900 mb-2">
                   Sambutan Kepala Sekolah
                 </h2>
-                <div className="w-full h-[2px] bg-red-100 flex">
-                   <div className="w-24 h-full bg-red-500"></div>
+                <div className="w-full h-[2px] bg-blue-100 flex">
+                   <div className="w-24 h-full bg-blue-500"></div>
                 </div>
               </div>
               
@@ -220,14 +220,11 @@ const Home = () => {
                   <span className="w-px h-3 bg-[#9aa7b5]"></span>
                   <span>Nur Haliza</span>
                 </div>
-                <h3 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Rapat Antar Sekola SMK Se-Indonesia</h3>
+                <h3 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Rapat Antar Sekolah SMK Se-Indonesia</h3>
                 <p className="text-slate-500 text-xs leading-relaxed mb-6 line-clamp-5">
-                  Smamda.sch.id — SMA Muhammadiyah 2 (SMAMDA) Sidoarjo menggelar Rapat Kelulusan Murid Kelas X...alu Untuk Rapat Klulusan ini di dasari oleh munculnya isu yang beredar di masyarakat indonesiaa khususny di daerah sekitar wilayaah indonesia...
+                  Smamda.sch.id — SMA Muhammadiyah 2 (SMAMDA) Sidoarjo menggelar Rapat Kelulusan Murid Kelas X... Untuk rapat kelulusan ini didasari oleh munculnya isu yang beredar di masyarakat Indonesia khususnya di daerah sekitar wilayah Indonesia...
                 </p>
                 <div className="mt-auto">
-                  <button className="bg-[#e4ebf1] hover:bg-[#d0dbe5] text-slate-600 text-[11px] font-bold px-5 py-2 rounded-full transition-colors tracking-wide">
-                    Lihat selengkap nya
-                  </button>
                 </div>
               </div>
             </div>
@@ -241,14 +238,11 @@ const Home = () => {
                   <span className="w-px h-3 bg-[#9aa7b5]"></span>
                   <span>Nur Haliza</span>
                 </div>
-                <h3 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Rapat Antar Sekola SMK Se-Indonesia</h3>
+                <h3 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Rapat Antar Sekolah SMK Se-Indonesia</h3>
                 <p className="text-slate-500 text-xs leading-relaxed mb-6 line-clamp-5">
-                  Smamda.sch.id — SMA Muhammadiyah 2 (SMAMDA) Sidoarjo menggelar Rapat Kelulusan Murid Kelas X...alu Untuk Rapat Klulusan ini di dasari oleh munculnya isu yang beredar di masyarakat indonesiaa khususny di daerah sekitar wilayaah indonesia...
+                  Smamda.sch.id — SMA Muhammadiyah 2 (SMAMDA) Sidoarjo menggelar Rapat Kelulusan Murid Kelas X... Untuk rapat kelulusan ini didasari oleh munculnya isu yang beredar di masyarakat Indonesia khususnya di daerah sekitar wilayah Indonesia...
                 </p>
                 <div className="mt-auto">
-                  <button className="bg-[#e4ebf1] hover:bg-[#d0dbe5] text-slate-600 text-[11px] font-bold px-5 py-2 rounded-full transition-colors tracking-wide">
-                    Lihat selengkap nya
-                  </button>
                 </div>
               </div>
             </div>
@@ -262,14 +256,11 @@ const Home = () => {
                   <span className="w-px h-3 bg-[#9aa7b5]"></span>
                   <span>Nur Haliza</span>
                 </div>
-                <h3 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Rapat Antar Sekola SMK Se-Indonesia</h3>
+                <h3 className="font-bold text-slate-800 text-[15px] mb-3 leading-snug">Rapat Antar Sekolah SMK Se-Indonesia</h3>
                 <p className="text-slate-500 text-xs leading-relaxed mb-6 line-clamp-5">
-                  Smamda.sch.id — SMA Muhammadiyah 2 (SMAMDA) Sidoarjo menggelar Rapat Kelulusan Murid Kelas X...alu Untuk Rapat Klulusan ini di dasari oleh munculnya isu yang beredar di masyarakat indonesiaa khususny di daerah sekitar wilayaah indonesia...
+                  Smamda.sch.id — SMA Muhammadiyah 2 (SMAMDA) Sidoarjo menggelar Rapat Kelulusan Murid Kelas X... Untuk rapat kelulusan ini didasari oleh munculnya isu yang beredar di masyarakat Indonesia khususnya di daerah sekitar wilayah Indonesia...
                 </p>
                 <div className="mt-auto">
-                  <button className="bg-[#e4ebf1] hover:bg-[#d0dbe5] text-slate-600 text-[11px] font-bold px-5 py-2 rounded-full transition-colors tracking-wide">
-                    Lihat selengkap nya
-                  </button>
                 </div>
               </div>
             </div>
@@ -292,7 +283,7 @@ const Home = () => {
           {/* Section Title */}
           <div className="flex justify-center items-center gap-2 mb-20">
             <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-extrabold text-slate-900 tracking-tight">Kompetensi</h2>
-            <div className="bg-[#db3232] px-4 py-1.5 shadow-sm">
+            <div className="bg-blue-600 px-4 py-1.5 shadow-sm">
               <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-extrabold text-white tracking-tight">Keahlian</h2>
             </div>
           </div>
@@ -442,7 +433,7 @@ const Home = () => {
           {/* Title */}
           <div className="flex justify-center mb-16">
             <div className="bg-[#82abc9] px-8 py-2 rounded shadow-sm">
-              <h2 className="text-xl md:text-2xl font-bold text-white tracking-wide">Latest Update</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-white tracking-wide">Info Terbaru</h2>
             </div>
           </div>
           

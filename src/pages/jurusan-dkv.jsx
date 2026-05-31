@@ -118,33 +118,37 @@ const JurusanDkv = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-16 tracking-wide">Apa yang Dipelajari ?</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
-            {/* Card 1 */}
+            {/* Card 1 - Desain Grafis */}
             <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#164e63] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                {/* Pen Tool / Design icon */}
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15.232 5.232l3.536 3.536M9 13l6.586-6.586a2 2 0 012.828 2.828L11.828 15.828a4 4 0 01-1.414.828l-4.243 1.414 1.414-4.243A4 4 0 019 13z" /></svg>
               </div>
-              <span className="font-bold text-slate-800 text-sm tracking-tight">Programming</span>
+              <span className="font-bold text-slate-800 text-sm tracking-tight text-center">Desain Grafis</span>
             </div>
-            {/* Card 2 */}
+            {/* Card 2 - Fotografi */}
             <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#164e63] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg>
+                {/* Camera icon */}
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
               </div>
-              <span className="font-bold text-slate-800 text-sm tracking-tight">Database</span>
+              <span className="font-bold text-slate-800 text-sm tracking-tight text-center">Fotografi</span>
             </div>
-            {/* Card 3 */}
+            {/* Card 3 - Produksi Video */}
             <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#164e63] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                {/* Video / film icon */}
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 10l4.553-2.277A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" /></svg>
               </div>
-              <span className="font-bold text-slate-800 text-sm tracking-tight">Web</span>
+              <span className="font-bold text-slate-800 text-sm tracking-tight text-center">Produksi Video</span>
             </div>
-            {/* Card 4 */}
+            {/* Card 4 - Ilustrasi Digital */}
             <div className="bg-white rounded-lg py-12 px-6 flex flex-col items-center justify-center shadow-xl hover-lift">
               <div className="w-16 h-16 bg-[#164e63] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                {/* Brush / illustration icon */}
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg>
               </div>
-              <span className="font-bold text-slate-800 text-sm tracking-tight">Mobile</span>
+              <span className="font-bold text-slate-800 text-sm tracking-tight text-center">Ilustrasi Digital</span>
             </div>
           </div>
         </div>
@@ -155,13 +159,13 @@ const JurusanDkv = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-12 text-center md:text-left">Sekilas Informasi</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group">
-            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="1dkv.png" alt="Sekilas Info 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group border border-slate-100/50">
-            <img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="2dkv.png" alt="Sekilas Info 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="w-full aspect-[4/3] bg-slate-100 overflow-hidden shadow-lg rounded-xl group">
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Sekilas Info 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="2mp.png" alt="Sekilas Info 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </section>
@@ -206,7 +210,7 @@ const JurusanDkv = () => {
           <div className="w-full md:w-1/2">
             <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-100 relative group">
               <img
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+                src="dkvfoto.png"
                 alt="Studio Kreatif DKV"
                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
               />

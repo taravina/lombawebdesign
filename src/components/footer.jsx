@@ -14,19 +14,19 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               {/* Medal/Award Icon */}
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="inline-block hover:text-white hover:-translate-y-1 hover:scale-110 transition-all duration-300">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </a>
               {/* Globe/Web Icon */}
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="inline-block hover:text-white hover:-translate-y-1 hover:scale-110 transition-all duration-300">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                 </svg>
               </a>
               {/* Mail Icon */}
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="inline-block hover:text-white hover:-translate-y-1 hover:scale-110 transition-all duration-300">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -38,11 +38,11 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-6">Program Studi</h4>
             <ul className="space-y-4 text-sm font-medium">
-              <li><Link to="/jurusan-rpl" className="hover:text-white transition-colors">Rekayasa Perangkat Lunak</Link></li>
-              <li><Link to="/jurusan-dkv" className="hover:text-white transition-colors">Desain Komunikasi Visual</Link></li>
-              <li><Link to="/jurusan-akl" className="hover:text-white transition-colors">Akuntansi</Link></li>
-              <li><Link to="/jurusan-bd" className="hover:text-white transition-colors">Bisnis Digital Dan Pemasaran</Link></li>
-              <li><Link to="/jurusan-kriya" className="hover:text-white transition-colors">Kriya Kreatif Batik Dan Tekstil</Link></li>
+              <li><Link to="/jurusan-rpl" className="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Rekayasa Perangkat Lunak</Link></li>
+              <li><Link to="/jurusan-dkv" className="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Desain Komunikasi Visual</Link></li>
+              <li><Link to="/jurusan-akl" className="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Akuntansi</Link></li>
+              <li><Link to="/jurusan-bd" className="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Bisnis Digital Dan Pemasaran</Link></li>
+              <li><Link to="/jurusan-kriya" className="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Kriya Kreatif Batik Dan Tekstil</Link></li>
             </ul>
           </div>
 
@@ -50,10 +50,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-6">Tautan Cepat</h4>
             <ul className="space-y-4 text-sm font-medium">
-              <li><Link to="/" className="hover:text-white transition-colors">Beranda</Link></li>
-              <li><Link to="/about" className="hover:text-white transition-colors">Tentang</Link></li>
-              <li><Link to="/kontak" className="hover:text-white transition-colors">Kontak Kami</Link></li>
-              <li><a href="#" className="hover:text-white transition-colors">Berita Terkini</a></li>
+              <li><Link to="/" className="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Beranda</Link></li>
+              <li><Link to="/about" className="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Tentang</Link></li>
+              <li><Link to="/kontak" className="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Kontak Kami</Link></li>
+              <li><a href="#" className="inline-block hover:text-white hover:translate-x-2 transition-all duration-300">Berita Terkini</a></li>
             </ul>
           </div>
 
@@ -87,7 +87,7 @@ const Footer = () => {
 
         {/* Bottom Copyright */}
         <div className="border-t border-[#445263] pt-6 flex justify-center text-xs font-medium tracking-wide">
-          <p>© 2024 SMKN 6 Jember. Excellence in Vocational Education. All rights reserved.</p>
+          <p>© 2024 SMKN 6 Jember. Keunggulan dalam Pendidikan Vokasi. Hak cipta dilindungi undang-undang.</p>
         </div>
       </div>
     </footer>
